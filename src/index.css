@@ -1,0 +1,59 @@
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.main-container {
+  height: 220vh; /* 70% of the viewport height */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds the height */
+  padding-top: 25px; /* equivalent to sx: { py: 1 } */
+  max-width: 90%; /* 90% of the viewport width */
+  margin: 0 auto; /* center the content */
+  padding-bottom: 10vh; /* 10% of the viewport height */
+}
+
+/* Media queries for adjusting styles based on screen size */
+@media screen and (min-width: 600px) {
+  .main-container {
+    min-height: 100vh;
+    min-width: 55vh;
+    max-width: 100%;
+    padding-bottom: 15vh;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .main-container {
+    min-height: 100vh;
+    min-width: 80%;
+    max-width: 100%;
+    padding-bottom: 15vh;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .main-container {
+    min-height: 50vh;
+
+    padding-bottom: 20vh;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .main-container {
+    min-height: 50vh;
+
+    padding-bottom: 20vh;
+  }
+}
